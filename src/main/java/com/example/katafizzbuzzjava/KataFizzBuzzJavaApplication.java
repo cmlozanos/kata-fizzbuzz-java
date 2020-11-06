@@ -13,6 +13,9 @@ public class KataFizzBuzzJavaApplication {
 		if ((5 % number) == 0) {
 			return "Buzz";
 		}
+		if ((15 % number) == 0) {
+			return "FizzBuzz";
+		}
 		return null;
 	}
 }
