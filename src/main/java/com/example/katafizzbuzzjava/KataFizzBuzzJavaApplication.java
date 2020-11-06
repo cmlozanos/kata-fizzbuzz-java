@@ -7,6 +7,10 @@ public class KataFizzBuzzJavaApplication {
 	}
 
 	public String transform(final Integer number) {
+		if (null == number) {
+			throw new IllegalArgumentException();
+		}
+
 		if ((3 % number) == 0) {
 			return "Fizz";
 		}
