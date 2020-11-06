@@ -9,8 +9,7 @@ public class FizzRule implements RulesInterface {
 
 	@Override
 	public String apply() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Fizz";
 	}
 
 }
