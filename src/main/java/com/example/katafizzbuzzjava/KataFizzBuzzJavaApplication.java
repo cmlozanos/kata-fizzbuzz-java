@@ -16,6 +16,6 @@ public class KataFizzBuzzJavaApplication {
 		if ((15 % number) == 0) {
 			return "FizzBuzz";
 		}
-		return null;
+		return number.toString();
 	}
 }
