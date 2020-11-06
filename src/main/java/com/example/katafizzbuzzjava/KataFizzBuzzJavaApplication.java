@@ -10,6 +10,9 @@ public class KataFizzBuzzJavaApplication {
 		if ((3 % number) == 0) {
 			return "Fizz";
 		}
+		if ((5 % number) == 0) {
+			return "Buzz";
+		}
 		return null;
 	}
 }
