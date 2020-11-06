@@ -17,4 +17,17 @@ public class KataFizzBuzzJavaApplicationTest {
 		// then
 		Assertions.assertEquals("Fizz", result);
 	}
+
+	@Test
+	public void givenNumberDivisibleBy5WhenTransformThenShouldReturnBuzz() {
+		// given
+		final KataFizzBuzzJavaApplication app = new KataFizzBuzzJavaApplication();
+		final Integer number = 5;
+
+		// when
+		final String result = app.transform(number);
+
+		// then
+		Assertions.assertEquals("Buzz", result);
+	}
 }
