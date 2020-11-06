@@ -43,4 +43,17 @@ public class KataFizzBuzzJavaApplicationTest {
 		// then
 		Assertions.assertEquals("FizzBuzz", result);
 	}
+
+	@Test
+	public void givenNumberNotDivisibleBy3NeitherDivisibleBy5WhenTransformThenShouldReturnNumberAsString() {
+		// given
+		final KataFizzBuzzJavaApplication app = new KataFizzBuzzJavaApplication();
+		final Integer number = 4;
+
+		// when
+		final String result = app.transform(number);
+
+		// then
+		Assertions.assertEquals("4", result);
+	}
 }
