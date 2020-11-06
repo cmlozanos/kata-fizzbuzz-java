@@ -56,4 +56,14 @@ public class KataFizzBuzzJavaApplicationTest {
 		// then
 		Assertions.assertEquals("4", result);
 	}
+
+	@Test
+	public void givenNullNumberWhenTransformThenShouldThrowIllegalArgumentException() {
+		// given
+		final KataFizzBuzzJavaApplication app = new KataFizzBuzzJavaApplication();
+		final Integer number = null;
+
+		// when - then
+		Assertions.assertThrows(IllegalArgumentException.class, () -> app.transform(number));
+	}
 }
