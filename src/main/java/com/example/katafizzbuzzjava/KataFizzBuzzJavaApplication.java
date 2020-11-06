@@ -11,15 +11,27 @@ public class KataFizzBuzzJavaApplication {
 			throw new IllegalArgumentException();
 		}
 
-		if ((3 % number) == 0) {
+		if (this.isFizz(number)) {
 			return "Fizz";
 		}
-		if ((5 % number) == 0) {
+		if (this.isBuzz(number)) {
 			return "Buzz";
 		}
-		if ((15 % number) == 0) {
+		if (this.isFizzBuzz(number)) {
 			return "FizzBuzz";
 		}
 		return number.toString();
+	}
+
+	private boolean isFizzBuzz(final Integer number) {
+		return (15 % number) == 0;
+	}
+
+	private boolean isBuzz(final Integer number) {
+		return (5 % number) == 0;
+	}
+
+	private boolean isFizz(final Integer number) {
+		return (3 % number) == 0;
 	}
 }
