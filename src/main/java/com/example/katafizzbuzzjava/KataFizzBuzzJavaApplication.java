@@ -7,7 +7,9 @@ public class KataFizzBuzzJavaApplication {
 	}
 
 	public String transform(final Integer number) {
-		// TODO Auto-generated method stub
+		if ((3 % number) == 0) {
+			return "Fizz";
+		}
 		return null;
 	}
 }
