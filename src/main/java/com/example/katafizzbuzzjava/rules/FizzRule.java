@@ -4,8 +4,7 @@ public class FizzRule implements RulesInterface {
 
 	@Override
 	public boolean condition(final Integer number) {
-		// TODO Auto-generated method stub
-		return false;
+		return (3 % number) == 0;
 	}
 
 	@Override
