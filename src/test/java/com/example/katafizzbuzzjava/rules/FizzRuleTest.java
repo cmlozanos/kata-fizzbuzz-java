@@ -17,4 +17,16 @@ public class FizzRuleTest {
 		// then
 		Assertions.assertTrue(result);
 	}
+
+	@Test
+	public void givenFizzRuleWhenApplyThenShouldReturnFizz() {
+		// given
+		final FizzRule rule = new FizzRule();
+
+		// when
+		final String result = rule.apply();
+
+		// then
+		Assertions.assertEquals("Fizz", result);
+	}
 }
