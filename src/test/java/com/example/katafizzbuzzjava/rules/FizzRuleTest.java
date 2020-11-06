@@ -19,6 +19,19 @@ public class FizzRuleTest {
 	}
 
 	@Test
+	public void givenFizzRuleWhenNumberIsNotDivisibleBy3ThenShouldReturnTrue() {
+		// given
+		final FizzRule rule = new FizzRule();
+		final Integer number = 10;
+
+		// when
+		final boolean result = rule.condition(number);
+
+		// then
+		Assertions.assertFalse(result);
+	}
+
+	@Test
 	public void givenFizzRuleWhenApplyThenShouldReturnFizz() {
 		// given
 		final FizzRule rule = new FizzRule();
