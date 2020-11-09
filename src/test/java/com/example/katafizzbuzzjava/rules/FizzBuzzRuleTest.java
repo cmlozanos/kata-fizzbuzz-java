@@ -35,9 +35,10 @@ public class FizzBuzzRuleTest {
 	public void givenFizzBuzzRuleWhenApplyThenShouldReturnFizzBuzz() {
 		// given
 		final FizzBuzzRule rule = new FizzBuzzRule();
+		final Integer number = null;
 
 		// when
-		final String result = rule.apply();
+		final String result = rule.apply(number);
 
 		// then
 		Assertions.assertEquals("FizzBuzz", result);

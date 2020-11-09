@@ -8,7 +8,7 @@ public class FizzRule implements RulesInterface {
 	}
 
 	@Override
-	public String apply() {
+	public String apply(final Integer number) {
 		return "Fizz";
 	}
 

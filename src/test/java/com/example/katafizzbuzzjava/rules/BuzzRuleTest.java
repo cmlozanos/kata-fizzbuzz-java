@@ -35,9 +35,10 @@ public class BuzzRuleTest {
 	public void givenBuzzRuleWhenApplyThenShouldReturnBuzz() {
 		// given
 		final BuzzRule rule = new BuzzRule();
+		final Integer number = null;
 
 		// when
-		final String result = rule.apply();
+		final String result = rule.apply(number);
 
 		// then
 		Assertions.assertEquals("Buzz", result);

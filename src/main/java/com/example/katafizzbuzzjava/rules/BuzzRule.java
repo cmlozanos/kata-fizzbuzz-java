@@ -8,7 +8,7 @@ public class BuzzRule implements RulesInterface {
 	}
 
 	@Override
-	public String apply() {
+	public String apply(final Integer number) {
 		return "Buzz";
 	}
 

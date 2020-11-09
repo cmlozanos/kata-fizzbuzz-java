@@ -4,5 +4,5 @@ public interface RulesInterface {
 
 	boolean condition(Integer number);
 
-	String apply();
+	String apply(Integer number);
 }
