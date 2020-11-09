@@ -4,7 +4,7 @@ public class BuzzRule implements RulesInterface {
 
 	@Override
 	public boolean condition(final Integer number) {
-		return (5 % number) == 0;
+		return (number % 5) == 0;
 	}
 
 	@Override
