@@ -19,7 +19,7 @@ public class FizzRuleTest {
 	}
 
 	@Test
-	public void givenFizzRuleWhenNumberIsNotDivisibleBy3ThenShouldReturnTrue() {
+	public void givenFizzRuleWhenNumberIsNotDivisibleBy3ThenShouldReturnFalse() {
 		// given
 		final FizzRule rule = new FizzRule();
 		final Integer number = 10;

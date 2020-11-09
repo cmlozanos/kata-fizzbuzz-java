@@ -18,4 +18,17 @@ public class BuzzRuleTest {
 		Assertions.assertTrue(result);
 	}
 
+	@Test
+	public void givenFizzRuleWhenNumberIsNotDivisibleBy5ThenShouldReturnFalse() {
+		// given
+		final FizzRule rule = new FizzRule();
+		final Integer number = 10;
+
+		// when
+		final boolean result = rule.condition(number);
+
+		// then
+		Assertions.assertFalse(result);
+	}
+
 }
