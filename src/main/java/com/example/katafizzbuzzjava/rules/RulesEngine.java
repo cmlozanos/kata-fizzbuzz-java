@@ -9,6 +9,7 @@ public class RulesEngine {
 
 	RulesEngine() {
 		this.rules = new ArrayList<>();
+		this.rules.add(new FizzBuzzRule());
 		this.rules.add(new FizzRule());
 		this.rules.add(new BuzzRule());
 	}
