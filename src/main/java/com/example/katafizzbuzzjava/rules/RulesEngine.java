@@ -8,7 +8,7 @@ public class RulesEngine {
 	private final ArrayList<RulesInterface> rules;
 
 	RulesEngine() {
-		this.rules = new ArrayList<RulesInterface>();
+		this.rules = new ArrayList<>();
 		this.rules.add(new FizzRule());
 	}
 
