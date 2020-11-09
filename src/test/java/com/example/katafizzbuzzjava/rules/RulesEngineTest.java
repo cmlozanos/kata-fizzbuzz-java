@@ -56,4 +56,14 @@ public class RulesEngineTest {
 		// then
 		Assertions.assertEquals("2", result);
 	}
+
+	@Test
+	public void givenRuleEngineAndNullNumberWhenExecuteRulesThenShouldCheckConditionsAndApplyProperly() {
+		// given
+		final RulesEngine rulesEngine = new RulesEngine();
+		final Integer number = null;
+
+		// when - then
+		Assertions.assertThrows(IllegalArgumentException.class, () -> rulesEngine.executeRules(number));
+	}
 }
