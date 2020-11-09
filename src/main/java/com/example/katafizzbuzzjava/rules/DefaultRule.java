@@ -9,8 +9,7 @@ public class DefaultRule implements RulesInterface {
 
 	@Override
 	public String apply(final Integer number) {
-		// TODO Auto-generated method stub
-		return null;
+		return number.toString();
 	}
 
 }
