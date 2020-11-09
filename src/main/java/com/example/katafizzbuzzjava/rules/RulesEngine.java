@@ -16,9 +16,14 @@ public class RulesEngine {
 	}
 
 	public String executeRules(final Integer number) {
-		final Optional<String> result = Optional
-				.of(this.rules.stream().filter(rule -> rule.condition(number)).findFirst().get().apply(number));
-		return result.orElse(null);
+		if (null == number) {
+			throw new IllegalArgumentException();
+		}
+
+		final Optional<RulesInterface> findFirst = this.rules.stream().filter(rule -> rule.condition(number))
+				.findFirst();
+		final RulesInterface rule = findFirst.orElseThrow(IllegalArgumentException::new);
+		return rule.apply(number);
 	}
 
 }
