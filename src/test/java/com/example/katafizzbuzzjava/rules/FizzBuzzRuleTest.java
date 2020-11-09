@@ -30,4 +30,16 @@ public class FizzBuzzRuleTest {
 		// then
 		Assertions.assertFalse(result);
 	}
+
+	@Test
+	public void givenFizzBuzzRuleWhenApplyThenShouldReturnFizzBuzz() {
+		// given
+		final FizzBuzzRule rule = new FizzBuzzRule();
+
+		// when
+		final String result = rule.apply();
+
+		// then
+		Assertions.assertEquals("FizzBuzz", result);
+	}
 }
