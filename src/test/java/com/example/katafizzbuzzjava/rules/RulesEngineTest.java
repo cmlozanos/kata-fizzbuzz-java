@@ -17,4 +17,17 @@ public class RulesEngineTest {
 		// then
 		Assertions.assertEquals("Fizz", result);
 	}
+
+	@Test
+	public void givenRuleEngineAndNumber5WhenExecuteRulesThenShouldCheckConditionsAndApplyProperly() {
+		// given
+		final RulesEngine rulesEngine = new RulesEngine();
+		final Integer number = 5;
+
+		// when
+		final String result = rulesEngine.executeRules(number);
+
+		// then
+		Assertions.assertEquals("Buzz", result);
+	}
 }
