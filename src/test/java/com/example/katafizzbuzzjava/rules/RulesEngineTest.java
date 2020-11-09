@@ -43,4 +43,17 @@ public class RulesEngineTest {
 		// then
 		Assertions.assertEquals("FizzBuzz", result);
 	}
+
+	@Test
+	public void givenRuleEngineAndNumberNotDivisibleBy3Or5WhenExecuteRulesThenShouldCheckConditionsAndApplyProperly() {
+		// given
+		final RulesEngine rulesEngine = new RulesEngine();
+		final Integer number = 2;
+
+		// when
+		final String result = rulesEngine.executeRules(number);
+
+		// then
+		Assertions.assertEquals("2", result);
+	}
 }
