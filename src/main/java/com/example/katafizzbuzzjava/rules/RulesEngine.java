@@ -12,6 +12,7 @@ public class RulesEngine {
 		this.rules.add(new FizzBuzzRule());
 		this.rules.add(new FizzRule());
 		this.rules.add(new BuzzRule());
+		this.rules.add(new DefaultRule());
 	}
 
 	public String executeRules(final Integer number) {
