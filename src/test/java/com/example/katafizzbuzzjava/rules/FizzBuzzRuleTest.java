@@ -17,4 +17,17 @@ public class FizzBuzzRuleTest {
 		// then
 		Assertions.assertTrue(result);
 	}
+
+	@Test
+	public void givenFizzBuzzRuleWhenNumberIsNotDivisibleBy5AndIsNotDivisibleBy3ThenShouldReturnFalse() {
+		// given
+		final FizzBuzzRule rule = new FizzBuzzRule();
+		final Integer number = 3;
+
+		// when
+		final boolean result = rule.condition(number);
+
+		// then
+		Assertions.assertFalse(result);
+	}
 }
