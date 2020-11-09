@@ -30,4 +30,17 @@ public class RulesEngineTest {
 		// then
 		Assertions.assertEquals("Buzz", result);
 	}
+
+	@Test
+	public void givenRuleEngineAndNumber15WhenExecuteRulesThenShouldCheckConditionsAndApplyProperly() {
+		// given
+		final RulesEngine rulesEngine = new RulesEngine();
+		final Integer number = 15;
+
+		// when
+		final String result = rulesEngine.executeRules(number);
+
+		// then
+		Assertions.assertEquals("FizzBuzz", result);
+	}
 }
