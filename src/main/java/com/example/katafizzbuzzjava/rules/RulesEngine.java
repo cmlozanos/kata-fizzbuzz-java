@@ -15,7 +15,7 @@ public class RulesEngine {
 	public String executeRules(final Integer number) {
 		final Optional<String> result = Optional
 				.of(this.rules.stream().filter(rule -> rule.condition(number)).findFirst().get().apply());
-		return result.isPresent() ? result.get() : null;
+		return result.orElse(null);
 	}
 
 }
