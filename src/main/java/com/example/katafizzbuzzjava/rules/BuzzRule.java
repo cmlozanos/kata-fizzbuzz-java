@@ -9,8 +9,7 @@ public class BuzzRule implements RulesInterface {
 
 	@Override
 	public String apply() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Buzz";
 	}
 
 }
